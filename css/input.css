@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: 79% -10%;
+}
+
+#features {
+  background-image: url("/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: -20% -1%;
+}
+
+#features .box {
+  counter-increment: count;
+  position: relative;
+}
+#features .box::before {
+  content: "0" counter(count);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+}
+
+.container #bultes > span.active {
+  border: none;
+  background-color: hsl(12, 88%, 59%);
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 50px -50px;
+  }
+  ul.open-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 90%;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px;
+    box-shadow: 0 10px 15px #eee;
+    animation: translateY 1s;
+  }
+  #features {
+    background-image: none;
+  }
+  #features .box::before {
+    left: 0;
+    top: 0;
+  }
+
+  #slider-container > div {
+    display: none;
+  }
+
+  #slider-container > div.active {
+    display: block;
+  }
+}
+
+@keyframes translateY {
+  0% {
+    top: 120px;
+    left: 50%;
+  }
+  100% {
+    top: 56px;
+    left: 50%;
+  }
+}

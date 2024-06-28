@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/input.css" />
+    <!-- Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body>
+    <header
+      class="reltive container my-6 flex justify-between items-center font-beVietnamPro"
+    >
+      <!-- Logo -->
+      <a href="" class="logo block">
+        <img class="max-w-full" src="./images/logo.svg" alt="logo" />
+      </a>
+      <!-- Nav Bar -->
+      <nav class="">
+        <!-- Links -->
+        <ul id="links" class="relative hidden md:flex gap-6">
+          <div
+            id="close"
+            class="absolute right-5 top-5 w-3 cursor-pointer md:hidden"
+          >
+            <img src="./images/icon-close.svg" alt="" />
+          </div>
+          <li>
+            <a
+              class="hover:text-darkGrayishBlue transition duration-300"
+              href="#"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-darkGrayishBlue transition duration-300"
+              href="#"
+              >Product</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-darkGrayishBlue transition duration-300"
+              href="#"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-darkGrayishBlue transition duration-300"
+              href="#"
+              >Careers</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-darkGrayishBlue transition duration-300"
+              href="#"
+              >Community</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Button -->
+      <button
+        class="hidden md:block text-white bg-brightRed rounded-full shadow-lg px-6 py-3 text-sm hover:bg-brightRedLight transition duration-300"
+      >
+        Get Started
+      </button>
+      <!-- Media Mobil -->
+      <div
+        id="bar-icon"
+        class="md:hidden cursor-pointer hover:rotate-180 transition duration-300"
+      >
+        <svg
+          class="w-6 h-6 text-gray-800 white:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M5 7h14M5 12h14M5 17h10"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Introduction Hero -->
+    <section id="introduction" class="">
+      <!-- Grid Container -->
+      <div
+        class="container grid grid-cols-1 gap-10 md:grid-cols-4 md:space-x-6 mb-12 justify-center items-center"
+      >
+        <!-- Left Item -->
+        <div class="col-span-2 max-w-md">
+          <h1 class="text-darkBlue text-4xl text-center md:text-left mb-5">
+            Bring everyone together to build better products.
+          </h1>
+          <p class="text-darkGrayishBlue text-center md:text-left">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button
+            class="block text-white bg-brightRed rounded-full shadow-lg px-6 py-3 mx-auto mt-8 md:mx-0 text-sm hover:bg-brightRedLight transition duration-300"
+          >
+            Get Started
+          </button>
+        </div>
+        <!-- Right Item -->
+        <div class="col-span-2 max-w-[600px]">
+          <div>
+            <img src="./images/illustration-intro.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features  -->
+    <section id="features" class="">
+      <!-- Grid Container -->
+      <div class="container grid gap-10 grid-cols-1 mb-12 md:grid-cols-4">
+        <!-- What’s different -->
+        <div class="md:col-span-2 max-w-md text-sm mb-12">
+          <h2
+            class="text-darkBlue text-2xl md:text-4xl text-center md:text-left mb-5"
+          >
+            What’s different about Manage?
+          </h2>
+          <p class="text-darkGrayishBlue text-center md:text-left">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <!-- Container Boxs -->
+        <div class="md:col-span-2 max-w-[600px] text-sm">
+          <!-- Box Col -->
+          <div class="box mb-8 md:pl-24">
+            <h3
+              class="text-darkBlue bg-brightRedSupLight text-base font-bold pl-20 p-1 rounded-2xl md:rounded-none md:p-0 md:pl-0 md:font-normal md:text-2xl md:bg-transparent mb-5"
+            >
+              Track company-wide progress
+            </h3>
+            <p class="text-darkGrayishBlue">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </div>
+          <!-- Box Col -->
+          <div class="box mb-8 md:pl-24">
+            <h3
+              class="text-darkBlue bg-brightRedSupLight text-base font-bold pl-20 p-1 rounded-2xl md:rounded-none md:p-0 md:pl-0 md:font-normal md:text-2xl md:bg-transparent mb-5"
+            >
+              Advanced built-in reports
+            </h3>
+            <p class="text-darkGrayishBlue">
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </div>
+          <!-- Box Col -->
+          <div class="box mb-8 md:pl-24">
+            <h3
+              class="text-darkBlue bg-brightRedSupLight text-base font-bold pl-20 p-1 rounded-2xl md:rounded-none md:p-0 md:pl-0 md:font-normal md:text-2xl md:bg-transparent mb-5"
+            >
+              Everything you need in one place
+            </h3>
+            <p class="text-darkGrayishBlue">
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <!-- Grid Container -->
+      <div class="container text-center mb-12">
+        <!-- Heading Section -->
+        <h1 class="text-darkBlue text-2xl md:text-4xl mb-16 md:mb-28 mx-auto">
+          What they’ve said
+        </h1>
+        <!-- Container Boxs -->
+        <div
+          id="slider-container"
+          class="relative grid grid-cols-1 md:grid-cols-2 md:gap-x-5 md:gap-y-16 xl:grid-cols-4 justify-center items-center"
+        >
+          <!-- Box -->
+          <div class="bg-veryLightGray rounded-xl p-5 mb-5 md:mb-0 relative">
+            <img
+              class="w-16 absolute left-1/2 -translate-x-1/2 -top-[35px]"
+              src="./images/avatar-anisha.png"
+              alt=""
+            />
+            <h2 class="mt-6 mb-3 font-bold text-darkBlue">Anisha Li</h2>
+            <p class="text-darkGrayishBlue">
+              “Manage has supercharged our team’s workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </p>
+          </div>
+          <!-- Box -->
+          <div
+            class="md:block bg-veryLightGray rounded-xl p-5 mb-5 md:mb-0 relative"
+          >
+            <img
+              class="w-16 absolute left-1/2 -translate-x-1/2 -top-[35px]"
+              src="./images/avatar-ali.png"
+              alt=""
+            />
+            <h2 class="mt-6 mb-3 font-bold text-darkBlue">Ali Bravo</h2>
+            <p class="text-darkGrayishBlue">
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
+          </div>
+          <!-- Box -->
+          <div
+            class="md:block bg-veryLightGray rounded-xl p-5 mb-5 md:mb-0 relative"
+          >
+            <img
+              class="w-16 absolute left-1/2 -translate-x-1/2 -top-[35px]"
+              src="./images/avatar-richard.png"
+              alt=""
+            />
+            <h2 class="mt-6 mb-3 font-bold text-darkBlue">Richard Watts</h2>
+            <p class="text-darkGrayishBlue">
+              “Manage allows us to provide structure and process. It keeps us
+              organized and focused. I can’t stop recommending them to everyone
+              I talk to!”
+            </p>
+          </div>
+          <!-- Box -->
+          <div
+            class="md:block bg-veryLightGray rounded-xl p-5 mb-5 md:mb-0 relative"
+          >
+            <img
+              class="w-16 absolute left-1/2 -translate-x-1/2 -top-[35px]"
+              src="./images/avatar-shanai.png"
+              alt=""
+            />
+            <h2 class="mt-6 mb-3 font-bold text-darkBlue">Shanai Gough</h2>
+            <p class="text-darkGrayishBlue">
+              “Their software allows us to track, manage and collaborate on our
+              projects from anywhere. It keeps the whole team in-sync without
+              being intrusive.”
+            </p>
+          </div>
+        </div>
+        <!-- Bultes Container -->
+        <div
+          id="bultes"
+          class="container md:hidden flex justify-center items-center gap-1"
+        >
+          <span
+            class="w-3 h-3 border-2 border-brightRed hover:border-none hover:bg-brightRed cursor-pointer rounded-full transition duration-300 active"
+          ></span
+          ><span
+            class="w-3 h-3 border-2 border-brightRed hover:border-none hover:bg-brightRed cursor-pointer rounded-full transition duration-300"
+          ></span
+          ><span
+            class="w-3 h-3 border-2 border-brightRed hover:border-none hover:bg-brightRed cursor-pointer rounded-full transition duration-300"
+          ></span
+          ><span
+            class="w-3 h-3 border-2 border-brightRed hover:border-none hover:bg-brightRed cursor-pointer rounded-full transition duration-300"
+          ></span>
+        </div>
+        <button
+          class="block text-white bg-brightRed rounded-full shadow-lg px-6 py-3 mt-5 mx-auto text-sm hover:bg-brightRedLight transition duration-300"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+    <!-- CTA -->
+    <section class="bg-brightRed">
+      <div
+        class="container p-12 md:p-16 md:flex md:items-center md:justify-between"
+      >
+        <h1
+          class="text-white text-center text-4xl md:text-4xl md:max-w-[450px] mb-5"
+        >
+          Simplify how your team works today.
+        </h1>
+        <button
+          class="block mx-auto font-bold text-veryPaleRed bg-veryDarkBlue rounded-full shadow-lg px-6 py-3 text-sm hover:bg-white hover:text-brightRed transition duration-300"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+      <div
+        class="container flex flex-col-reverse gap-10 items-center md:flex md:flex-row md:justify-between md:items-center p-12 text-darkGrayishBlue"
+      >
+        <!-- Logo Box -->
+        <div
+          class="flex flex-col-reverse md:flex-col justify-between min-h-[100px] md:min-h-[130px]"
+        >
+          <!-- Logo -->
+          <a href="" class="logo block">
+            <img
+              class="max-w-full bg-white p-1 rounded-lg"
+              src="./images/logo.svg"
+              alt="logo"
+            />
+          </a>
+          <!-- social links -->
+          <div class="flex gap-3">
+            <a href="#"
+              ><svg
+                class="w-5 h-5 text-gray-800 dark:text-white hover:text-brightRed transition duration-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                class="w-5 h-5 text-gray-800 dark:text-white hover:text-brightRed transition duration-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                class="w-5 h-5 text-gray-800 dark:text-white hover:text-brightRed transition duration-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                class="w-5 h-5 text-gray-800 dark:text-white hover:text-brightRed transition duration-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                  clip-rule="evenodd"
+                />
+                <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                class="w-5 h-5 text-gray-800 dark:text-white hover:text-brightRed transition duration-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Links Box -->
+        <div class="flex justify-between gap-20">
+          <div class="flex flex-col gap-3">
+            <a class="hover:text-brightRed transition duration-300" href=""
+              >Home</a
+            >
+            <a class="hover:text-brightRed transition duration-300" href=""
+              >Pricing</a
+            >
+            <a class="hover:text-brightRed transition duration-300" href=""
+              >Products</a
+            >
+            <a class="hover:text-brightRed transition duration-300" href=""
+              >About Us</a
+            >
+          </div>
+          <div class="flex flex-col gap-3">
+            <a class="hover:text-brightRed transition duration-300" href=""
+              >Careers</a
+            >
+            <a class="hover:text-brightRed transition duration-300" href=""
+              >Community</a
+            >
+            <a class="hover:text-brightRed transition duration-300" href=""
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+        <!-- Form Box -->
+        <div class="flex flex-col justify-between md:min-h-[130px]">
+          <div class="">
+            <div class="flex justify-center items-center gap-3">
+              <input
+                class="rounded-full placeholder-brightRedLight text-black p-2 md:w-[170px]"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ahmed_Shehata/mail"
+              />
+              <button
+                class="block text-white bg-brightRed rounded-full shadow-lg px-6 py-3 text-sm hover:bg-brightRedLight transition duration-300"
+              >
+                Go
+              </button>
+            </div>
+            <span class="block ml-3 text-brightRed font-bold text-sm"
+              >Please insert A vaild email</span
+            >
+          </div>
+          <p class="hidden md:block md:self-end">
+            Copyright 2020. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
